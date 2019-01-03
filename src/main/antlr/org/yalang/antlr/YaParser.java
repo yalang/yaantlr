@@ -441,6 +441,7 @@ public class YaParser extends Parser {
 	}
 
 	public static class DecoratorContext extends ParserRuleContext {
+		public TerminalNode AT() { return getToken(YaParser.AT, 0); }
 		public Dotted_nameContext dotted_name() {
 			return getRuleContext(Dotted_nameContext.class,0);
 		}
@@ -691,6 +692,7 @@ public class YaParser extends Parser {
 		public SuiteContext suite() {
 			return getRuleContext(SuiteContext.class,0);
 		}
+		public TerminalNode ARROW() { return getToken(YaParser.ARROW, 0); }
 		public TestContext test() {
 			return getRuleContext(TestContext.class,0);
 		}
@@ -813,6 +815,10 @@ public class YaParser extends Parser {
 		}
 		public TerminalNode STAR() { return getToken(YaParser.STAR, 0); }
 		public TerminalNode POWER() { return getToken(YaParser.POWER, 0); }
+		public List<TerminalNode> ASSIGN() { return getTokens(YaParser.ASSIGN); }
+		public TerminalNode ASSIGN(int i) {
+			return getToken(YaParser.ASSIGN, i);
+		}
 		public List<TestContext> test() {
 			return getRuleContexts(TestContext.class);
 		}
@@ -1185,6 +1191,10 @@ public class YaParser extends Parser {
 		}
 		public TerminalNode STAR() { return getToken(YaParser.STAR, 0); }
 		public TerminalNode POWER() { return getToken(YaParser.POWER, 0); }
+		public List<TerminalNode> ASSIGN() { return getTokens(YaParser.ASSIGN); }
+		public TerminalNode ASSIGN(int i) {
+			return getToken(YaParser.ASSIGN, i);
+		}
 		public List<TestContext> test() {
 			return getRuleContexts(TestContext.class);
 		}
@@ -1858,6 +1868,10 @@ public class YaParser extends Parser {
 		public TestlistContext testlist() {
 			return getRuleContext(TestlistContext.class,0);
 		}
+		public List<TerminalNode> ASSIGN() { return getTokens(YaParser.ASSIGN); }
+		public TerminalNode ASSIGN(int i) {
+			return getToken(YaParser.ASSIGN, i);
+		}
 		public Expr_stmtContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -2019,6 +2033,7 @@ public class YaParser extends Parser {
 		public TestContext test(int i) {
 			return getRuleContext(TestContext.class,i);
 		}
+		public TerminalNode ASSIGN() { return getToken(YaParser.ASSIGN, 0); }
 		public AnnassignContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -2214,7 +2229,19 @@ public class YaParser extends Parser {
 	}
 
 	public static class AugassignContext extends ParserRuleContext {
+		public TerminalNode ADD_ASSIGN() { return getToken(YaParser.ADD_ASSIGN, 0); }
+		public TerminalNode SUB_ASSIGN() { return getToken(YaParser.SUB_ASSIGN, 0); }
+		public TerminalNode MULT_ASSIGN() { return getToken(YaParser.MULT_ASSIGN, 0); }
+		public TerminalNode AT_ASSIGN() { return getToken(YaParser.AT_ASSIGN, 0); }
+		public TerminalNode DIV_ASSIGN() { return getToken(YaParser.DIV_ASSIGN, 0); }
 		public TerminalNode MOD_ASSIGN() { return getToken(YaParser.MOD_ASSIGN, 0); }
+		public TerminalNode AND_ASSIGN() { return getToken(YaParser.AND_ASSIGN, 0); }
+		public TerminalNode OR_ASSIGN() { return getToken(YaParser.OR_ASSIGN, 0); }
+		public TerminalNode XOR_ASSIGN() { return getToken(YaParser.XOR_ASSIGN, 0); }
+		public TerminalNode LEFT_SHIFT_ASSIGN() { return getToken(YaParser.LEFT_SHIFT_ASSIGN, 0); }
+		public TerminalNode RIGHT_SHIFT_ASSIGN() { return getToken(YaParser.RIGHT_SHIFT_ASSIGN, 0); }
+		public TerminalNode POWER_ASSIGN() { return getToken(YaParser.POWER_ASSIGN, 0); }
+		public TerminalNode IDIV_ASSIGN() { return getToken(YaParser.IDIV_ASSIGN, 0); }
 		public AugassignContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -4827,6 +4854,13 @@ public class YaParser extends Parser {
 	}
 
 	public static class Comp_opContext extends ParserRuleContext {
+		public TerminalNode LESS_THAN() { return getToken(YaParser.LESS_THAN, 0); }
+		public TerminalNode GREATER_THAN() { return getToken(YaParser.GREATER_THAN, 0); }
+		public TerminalNode EQUALS() { return getToken(YaParser.EQUALS, 0); }
+		public TerminalNode GT_EQ() { return getToken(YaParser.GT_EQ, 0); }
+		public TerminalNode LT_EQ() { return getToken(YaParser.LT_EQ, 0); }
+		public TerminalNode NOT_EQ_1() { return getToken(YaParser.NOT_EQ_1, 0); }
+		public TerminalNode NOT_EQ_2() { return getToken(YaParser.NOT_EQ_2, 0); }
 		public TerminalNode IN() { return getToken(YaParser.IN, 0); }
 		public TerminalNode NOT() { return getToken(YaParser.NOT, 0); }
 		public TerminalNode IS() { return getToken(YaParser.IS, 0); }
@@ -4994,6 +5028,10 @@ public class YaParser extends Parser {
 		public Xor_exprContext xor_expr(int i) {
 			return getRuleContext(Xor_exprContext.class,i);
 		}
+		public List<TerminalNode> OR_OP() { return getTokens(YaParser.OR_OP); }
+		public TerminalNode OR_OP(int i) {
+			return getToken(YaParser.OR_OP, i);
+		}
 		public ExprContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -5052,6 +5090,10 @@ public class YaParser extends Parser {
 		}
 		public And_exprContext and_expr(int i) {
 			return getRuleContext(And_exprContext.class,i);
+		}
+		public List<TerminalNode> XOR() { return getTokens(YaParser.XOR); }
+		public TerminalNode XOR(int i) {
+			return getToken(YaParser.XOR, i);
 		}
 		public Xor_exprContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5112,6 +5154,10 @@ public class YaParser extends Parser {
 		public Shift_exprContext shift_expr(int i) {
 			return getRuleContext(Shift_exprContext.class,i);
 		}
+		public List<TerminalNode> AND_OP() { return getTokens(YaParser.AND_OP); }
+		public TerminalNode AND_OP(int i) {
+			return getToken(YaParser.AND_OP, i);
+		}
 		public And_exprContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -5170,6 +5216,14 @@ public class YaParser extends Parser {
 		}
 		public Arith_exprContext arith_expr(int i) {
 			return getRuleContext(Arith_exprContext.class,i);
+		}
+		public List<TerminalNode> LEFT_SHIFT() { return getTokens(YaParser.LEFT_SHIFT); }
+		public TerminalNode LEFT_SHIFT(int i) {
+			return getToken(YaParser.LEFT_SHIFT, i);
+		}
+		public List<TerminalNode> RIGHT_SHIFT() { return getTokens(YaParser.RIGHT_SHIFT); }
+		public TerminalNode RIGHT_SHIFT(int i) {
+			return getToken(YaParser.RIGHT_SHIFT, i);
 		}
 		public Shift_exprContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5237,6 +5291,14 @@ public class YaParser extends Parser {
 		}
 		public TermContext term(int i) {
 			return getRuleContext(TermContext.class,i);
+		}
+		public List<TerminalNode> ADD() { return getTokens(YaParser.ADD); }
+		public TerminalNode ADD(int i) {
+			return getToken(YaParser.ADD, i);
+		}
+		public List<TerminalNode> MINUS() { return getTokens(YaParser.MINUS); }
+		public TerminalNode MINUS(int i) {
+			return getToken(YaParser.MINUS, i);
 		}
 		public Arith_exprContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5309,9 +5371,21 @@ public class YaParser extends Parser {
 		public TerminalNode STAR(int i) {
 			return getToken(YaParser.STAR, i);
 		}
+		public List<TerminalNode> AT() { return getTokens(YaParser.AT); }
+		public TerminalNode AT(int i) {
+			return getToken(YaParser.AT, i);
+		}
+		public List<TerminalNode> DIV() { return getTokens(YaParser.DIV); }
+		public TerminalNode DIV(int i) {
+			return getToken(YaParser.DIV, i);
+		}
 		public List<TerminalNode> MOD() { return getTokens(YaParser.MOD); }
 		public TerminalNode MOD(int i) {
 			return getToken(YaParser.MOD, i);
+		}
+		public List<TerminalNode> IDIV() { return getTokens(YaParser.IDIV); }
+		public TerminalNode IDIV(int i) {
+			return getToken(YaParser.IDIV, i);
 		}
 		public TermContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5377,6 +5451,9 @@ public class YaParser extends Parser {
 		public FactorContext factor() {
 			return getRuleContext(FactorContext.class,0);
 		}
+		public TerminalNode ADD() { return getToken(YaParser.ADD, 0); }
+		public TerminalNode MINUS() { return getToken(YaParser.MINUS, 0); }
+		public TerminalNode NOT_OP() { return getToken(YaParser.NOT_OP, 0); }
 		public PowerContext power() {
 			return getRuleContext(PowerContext.class,0);
 		}
@@ -5583,6 +5660,10 @@ public class YaParser extends Parser {
 	public static class AtomContext extends ParserRuleContext {
 		public TerminalNode OPEN_PAREN() { return getToken(YaParser.OPEN_PAREN, 0); }
 		public TerminalNode CLOSE_PAREN() { return getToken(YaParser.CLOSE_PAREN, 0); }
+		public TerminalNode OPEN_BRACK() { return getToken(YaParser.OPEN_BRACK, 0); }
+		public TerminalNode CLOSE_BRACK() { return getToken(YaParser.CLOSE_BRACK, 0); }
+		public TerminalNode OPEN_BRACE() { return getToken(YaParser.OPEN_BRACE, 0); }
+		public TerminalNode CLOSE_BRACE() { return getToken(YaParser.CLOSE_BRACE, 0); }
 		public TerminalNode NAME() { return getToken(YaParser.NAME, 0); }
 		public TerminalNode NUMBER() { return getToken(YaParser.NUMBER, 0); }
 		public TerminalNode ELLIPSIS() { return getToken(YaParser.ELLIPSIS, 0); }
@@ -5948,9 +6029,11 @@ public class YaParser extends Parser {
 		public ArglistContext arglist() {
 			return getRuleContext(ArglistContext.class,0);
 		}
+		public TerminalNode OPEN_BRACK() { return getToken(YaParser.OPEN_BRACK, 0); }
 		public SubscriptlistContext subscriptlist() {
 			return getRuleContext(SubscriptlistContext.class,0);
 		}
+		public TerminalNode CLOSE_BRACK() { return getToken(YaParser.CLOSE_BRACK, 0); }
 		public TerminalNode DOT() { return getToken(YaParser.DOT, 0); }
 		public TerminalNode NAME() { return getToken(YaParser.NAME, 0); }
 		public TrailerContext(ParserRuleContext parent, int invokingState) {
@@ -6938,6 +7021,7 @@ public class YaParser extends Parser {
 		public TestContext test(int i) {
 			return getRuleContext(TestContext.class,i);
 		}
+		public TerminalNode ASSIGN() { return getToken(YaParser.ASSIGN, 0); }
 		public TerminalNode POWER() { return getToken(YaParser.POWER, 0); }
 		public TerminalNode STAR() { return getToken(YaParser.STAR, 0); }
 		public Comp_forContext comp_for() {

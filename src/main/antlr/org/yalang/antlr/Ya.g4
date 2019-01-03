@@ -133,24 +133,24 @@ single_input: NEWLINE | simple_stmt | compound_stmt NEWLINE;
 file_input: (NEWLINE | stmt)* EOF;
 eval_input: testlist NEWLINE* EOF;
 
-decorator: '@' dotted_name ( OPEN_PAREN (arglist)? CLOSE_PAREN )? NEWLINE;
+decorator: AT dotted_name ( OPEN_PAREN (arglist)? CLOSE_PAREN )? NEWLINE;
 decorators: decorator+;
 decorated: decorators (classdef | funcdef | async_funcdef);
 
 async_funcdef: ASYNC funcdef;
-funcdef: DEF NAME parameters ('->' test)? COLON suite;
+funcdef: DEF NAME parameters (ARROW test)? COLON suite;
 
 parameters: OPEN_PAREN (typedargslist)? CLOSE_PAREN;
-typedargslist: (tfpdef ('=' test)? (COMMA tfpdef ('=' test)?)* (COMMA (
-        STAR (tfpdef)? (COMMA tfpdef ('=' test)?)* (COMMA (POWER tfpdef (COMMA)?)?)?
+typedargslist: (tfpdef (ASSIGN test)? (COMMA tfpdef (ASSIGN test)?)* (COMMA (
+        STAR (tfpdef)? (COMMA tfpdef (ASSIGN test)?)* (COMMA (POWER tfpdef (COMMA)?)?)?
       | POWER tfpdef (COMMA)?)?)?
-  | STAR (tfpdef)? (COMMA tfpdef ('=' test)?)* (COMMA (POWER tfpdef (COMMA)?)?)?
+  | STAR (tfpdef)? (COMMA tfpdef (ASSIGN test)?)* (COMMA (POWER tfpdef (COMMA)?)?)?
   | POWER tfpdef (COMMA)?);
 tfpdef: NAME (COLON test)?;
-varargslist: (vfpdef ('=' test)? (COMMA vfpdef ('=' test)?)* (COMMA (
-        STAR (vfpdef)? (COMMA vfpdef ('=' test)?)* (COMMA (POWER vfpdef (COMMA)?)?)?
+varargslist: (vfpdef (ASSIGN test)? (COMMA vfpdef (ASSIGN test)?)* (COMMA (
+        STAR (vfpdef)? (COMMA vfpdef (ASSIGN test)?)* (COMMA (POWER vfpdef (COMMA)?)?)?
       | POWER vfpdef (COMMA)?)?)?
-  | STAR (vfpdef)? (COMMA vfpdef ('=' test)?)* (COMMA (POWER vfpdef (COMMA)?)?)?
+  | STAR (vfpdef)? (COMMA vfpdef (ASSIGN test)?)* (COMMA (POWER vfpdef (COMMA)?)?)?
   | POWER vfpdef (COMMA)?
 );
 vfpdef: NAME;
@@ -160,11 +160,11 @@ simple_stmt: small_stmt (SEMI_COLON small_stmt)* (SEMI_COLON)? NEWLINE;
 small_stmt: (expr_stmt | del_stmt | pass_stmt | flow_stmt |
              import_stmt | global_stmt | nonlocal_stmt | assert_stmt);
 expr_stmt: testlist_star_expr (annassign | augassign (yield_expr|testlist) |
-                     ('=' (yield_expr|testlist_star_expr))*);
-annassign: COLON test ('=' test)?;
+                     (ASSIGN (yield_expr|testlist_star_expr))*);
+annassign: COLON test (ASSIGN test)?;
 testlist_star_expr: (test|star_expr) (COMMA (test|star_expr))* (COMMA)?;
-augassign: ('+=' | '-=' | '*=' | '@=' | '/=' | MOD_ASSIGN | '&=' | '|=' | '^=' |
-            '<<=' | '>>=' | '**=' | '//=');
+augassign: (ADD_ASSIGN | SUB_ASSIGN | MULT_ASSIGN | AT_ASSIGN | DIV_ASSIGN | MOD_ASSIGN | AND_ASSIGN | OR_ASSIGN | XOR_ASSIGN |
+            LEFT_SHIFT_ASSIGN | RIGHT_SHIFT_ASSIGN | POWER_ASSIGN | IDIV_ASSIGN);
 // For normal and annotated assignments, additional restrictions enforced by the interpreter
 del_stmt: DEL exprlist;
 pass_stmt: PASS;
@@ -214,23 +214,23 @@ not_test: NOT not_test | comparison;
 comparison: expr (comp_op expr)*;
 // <> isn't actually a valid comparison operator in Python. It's here for the
 // sake of a __future__ import described in PEP 401 (which really works :-)
-comp_op: '<'|'>'|'=='|'>='|'<='|'<>'|'!='|IN|NOT IN|IS|IS NOT;
+comp_op: LESS_THAN|GREATER_THAN|EQUALS|GT_EQ|LT_EQ|NOT_EQ_1|NOT_EQ_2|IN|NOT IN|IS|IS NOT;
 star_expr: STAR expr;
-expr: xor_expr ('|' xor_expr)*;
-xor_expr: and_expr ('^' and_expr)*;
-and_expr: shift_expr ('&' shift_expr)*;
-shift_expr: arith_expr (('<<'|'>>') arith_expr)*;
-arith_expr: term (('+'|'-') term)*;
-term: factor ((STAR|'@'|'/'|MOD|'//') factor)*;
-factor: ('+'|'-'|'~') factor | power;
+expr: xor_expr (OR_OP xor_expr)*;
+xor_expr: and_expr (XOR and_expr)*;
+and_expr: shift_expr (AND_OP shift_expr)*;
+shift_expr: arith_expr ((LEFT_SHIFT|RIGHT_SHIFT) arith_expr)*;
+arith_expr: term ((ADD|MINUS) term)*;
+term: factor ((STAR|AT|DIV|MOD|IDIV) factor)*;
+factor: (ADD|MINUS|NOT_OP) factor | power;
 power: atom_expr (POWER factor)?;
 atom_expr: (AWAIT)? atom trailer*;
 atom: (OPEN_PAREN (yield_expr|testlist_comp)? CLOSE_PAREN |
-       '[' (testlist_comp)? ']' |
-       '{' (dictorsetmaker)? '}' |
+       OPEN_BRACK (testlist_comp)? CLOSE_BRACK |
+       OPEN_BRACE (dictorsetmaker)? CLOSE_BRACE |
        NAME | NUMBER | STRING+ | ELLIPSIS | NONE | TRUE | FALSE);
 testlist_comp: (test|star_expr) ( comp_for | (COMMA (test|star_expr))* (COMMA)? );
-trailer: OPEN_PAREN (arglist)? CLOSE_PAREN | '[' subscriptlist ']' | DOT NAME;
+trailer: OPEN_PAREN (arglist)? CLOSE_PAREN | OPEN_BRACK subscriptlist CLOSE_BRACK | DOT NAME;
 subscriptlist: subscript (COMMA subscript)* (COMMA)?;
 subscript: test | (test)? COLON (test)? (sliceop)?;
 sliceop: COLON (test)?;
@@ -247,7 +247,7 @@ arglist: argument (COMMA argument)*  (COMMA)?;
 
 // The reason that keywords are test nodes instead of NAME is that using NAME
 // results in an ambiguity. ast.c makes sure it's a NAME.
-// "test '=' test" is really "keyword '=' test", but we have no such token.
+// "test ASSIGN test" is really "keyword ASSIGN test", but we have no such token.
 // These need to be in a single rule to avoid grammar that is ambiguous
 // to our LL(1) parser. Even though 'test' includes '*expr' in star_expr,
 // we explicitly match STAR here, too, to give it proper precedence.
@@ -255,7 +255,7 @@ arglist: argument (COMMA argument)*  (COMMA)?;
 // multiple (test comp_for) arguments are blocked; keyword unpackings
 // that precede iterable unpackings are blocked; etc.
 argument: ( test (comp_for)? |
-            test '=' test |
+            test ASSIGN test |
             POWER test |
             STAR test );
 
