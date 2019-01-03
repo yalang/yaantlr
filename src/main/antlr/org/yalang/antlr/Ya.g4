@@ -384,22 +384,22 @@ BYTES_LITERAL
 /// decimalinteger ::=  nonzerodigit digit* | "0"+
 DECIMAL_INTEGER
  : NON_ZERO_DIGIT DIGIT*
- | '0'+
+ | '٠'+
  ;
 
 /// octinteger     ::=  "0" ("o" | "O") octdigit+
 OCT_INTEGER
- : '0' [oO] OCT_DIGIT+
+ : '٠' [oO] OCT_DIGIT+
  ;
 
 /// hexinteger     ::=  "0" ("x" | "X") hexdigit+
 HEX_INTEGER
- : '0' [xX] HEX_DIGIT+
+ : '٠' [xX] HEX_DIGIT+
  ;
 
 /// bininteger     ::=  "0" ("b" | "B") bindigit+
 BIN_INTEGER
- : '0' [bB] BIN_DIGIT+
+ : '٠' [bB] BIN_DIGIT+
  ;
 
 /// floatnumber   ::=  pointfloat | exponentfloat
@@ -505,27 +505,27 @@ fragment STRING_ESCAPE_SEQ
 
 /// nonzerodigit   ::=  "1"..."9"
 fragment NON_ZERO_DIGIT
- : [1-9]
+ : [١-٩]
  ;
 
 /// digit          ::=  "0"..."9"
 fragment DIGIT
- : [0-9]
+ : [٠-٩]
  ;
 
 /// octdigit       ::=  "0"..."7"
 fragment OCT_DIGIT
- : [0-7]
+ : [٠-٧]
  ;
 
 /// hexdigit       ::=  digit | "a"..."f" | "A"..."F"
 fragment HEX_DIGIT
- : [0-9a-fA-F]
+ : [٠-٩ا-ح]
  ;
 
 /// bindigit       ::=  "0" | "1"
 fragment BIN_DIGIT
- : [01]
+ : [٠١]
  ;
 
 /// pointfloat    ::=  [intpart] fraction | intpart "."
