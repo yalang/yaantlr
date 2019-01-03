@@ -1,12 +1,14 @@
 package org.yalang.antlr;
 
-import org.antlr.v4.runtime.CharStream;
+import java.io.File;
+import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 //        App.run(Main.class, args);
 
-        String javaClassContent = "print('hello worl')";
-        Python3Lexer java8Lexer = new Python3Lexer(javaClassContent);
+        ParserFacade parserFacade = new ParserFacade();
+        AstPrinter astPrinter = new AstPrinter();
+        astPrinter.print(parserFacade.parse(new File("examples/render.py")));
     }
 }
