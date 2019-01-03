@@ -1,5 +1,5 @@
 plugins {
-    id 'antlr'
+    id 'yaantlr'
 }
 
 group 'org.yalang'
