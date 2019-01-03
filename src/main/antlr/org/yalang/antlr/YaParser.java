@@ -1,5 +1,6 @@
-// Generated from Python3.g4 by ANTLR 4.7.1
+// Generated from Ya.g4 by ANTLR 4.7.1
 package org.yalang.antlr;
+
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -10,9 +11,9 @@ import java.util.Iterator;
 import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
-public class Python3Parser extends Parser {
+public class YaParser extends Parser {
 	static { RuntimeMetaData.checkVersion("4.7.1", RuntimeMetaData.VERSION); }
-	Boolean matchedEOF = false;
+
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
@@ -77,17 +78,24 @@ public class Python3Parser extends Parser {
 	};
 
 	private static final String[] _LITERAL_NAMES = {
-		null, null, null, null, "'def'", "'return'", "'raise'", "'from'", "'import'", 
-		"'as'", "'global'", "'nonlocal'", "'assert'", "'if'", "'elif'", "'else'", 
-		"'while'", "'for'", "'in'", "'try'", "'finally'", "'with'", "'except'", 
-		"'lambda'", "'or'", "'and'", "'not'", "'is'", "'None'", "'True'", "'False'", 
-		"'class'", "'yield'", "'del'", "'pass'", "'continue'", "'break'", "'async'", 
-		"'await'", null, null, null, null, null, null, null, null, null, null, 
-		"'.'", "'...'", "'*'", "'('", "')'", "','", "':'", "';'", "'**'", "'='", 
-		"'['", "']'", "'|'", "'^'", "'&'", "'<<'", "'>>'", "'+'", "'-'", "'/'", 
-		"'%'", "'//'", "'~'", "'{'", "'}'", "'<'", "'>'", "'=='", "'>='", "'<='", 
-		"'<>'", "'!='", "'@'", "'->'", "'+='", "'-='", "'*='", "'@='", "'/='", 
-		"'%='", "'&='", "'|='", "'^='", "'<<='", "'>>='", "'**='", "'//='"
+		null, null, null, null, "'\u0648\u0638\u064A\u0641\u0629'", "'\u0627\u0631\u062C\u0639'", 
+		"'\u0631\u0641\u0639'", "'\u0645\u0646'", "'\u0627\u0633\u062A\u064A\u0631\u0627\u062F'", 
+		"'\u0645\u062B\u0644'", "'\u0639\u0627\u0644\u0645\u064A'", "'\u063A\u064A\u0631\u0645\u062D\u0644\u064A'", 
+		"'\u0627\u0643\u062F'", "'\u0644\u0648'", "'\u0648\u0644\u0648'", "'\u0627\u062E\u0631'", 
+		"'\u0628\u064A\u0646\u0645\u0627'", "'\u0644\u0643\u0644'", "'\u0641\u064A'", 
+		"'\u062D\u0627\u0648\u0644'", "'\u0627\u062E\u064A\u0631\u0627'", "'\u0645\u0639'", 
+		"'\u0627\u0644\u0627'", "'\u0627\u0645\u062F\u0627'", "'\u0627\u0648'", 
+		"'\u0648'", "'\u0644\u0627'", "'\u064A\u0633\u0627\u0648\u064A'", "'\u0644\u0627\u0627\u062D\u062F'", 
+		"'\u0635\u062D\u064A\u062D'", "'\u0643\u0627\u0630\u0628'", "'\u0635\u0646\u0641'", 
+		"'\u0645\u062D\u0635\u0648\u0644'", "'\u062D\u0630\u0641'", "'\u0645\u0631\u0631'", 
+		"'\u0627\u0633\u062A\u0645\u0631'", "'\u0627\u0643\u0633\u0631'", "'\u063A\u064A\u0631\u0645\u062A\u0632\u0627\u0645\u0646'", 
+		"'\u062A\u0631\u0642\u0628'", null, null, null, null, null, null, null, 
+		null, null, null, "'.'", "'...'", "'*'", "'('", "')'", "'\u060C'", "':'", 
+		"'\u061B'", "'**'", "'='", "'['", "']'", "'|'", "'^'", "'&'", "'<<'", 
+		"'>>'", "'+'", "'-'", "'/'", "'\u066A'", "'//'", "'~'", "'{'", "'}'", 
+		"'<'", "'>'", "'=='", "'>='", "'<='", "'<>'", "'!='", "'@'", "'->'", "'+='", 
+		"'-='", "'*='", "'@='", "'/='", "'\u066A='", "'&='", "'|='", "'^='", "'<<='", 
+		"'>>='", "'**='", "'//='"
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
 		null, "STRING", "NUMBER", "INTEGER", "DEF", "RETURN", "RAISE", "FROM", 
@@ -140,7 +148,7 @@ public class Python3Parser extends Parser {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "Python3.g4"; }
+	public String getGrammarFileName() { return "Ya.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -151,12 +159,12 @@ public class Python3Parser extends Parser {
 	@Override
 	public ATN getATN() { return _ATN; }
 
-	public Python3Parser(TokenStream input) {
+	public YaParser(TokenStream input) {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 	public static class Single_inputContext extends ParserRuleContext {
-		public TerminalNode NEWLINE() { return getToken(Python3Parser.NEWLINE, 0); }
+		public TerminalNode NEWLINE() { return getToken(YaParser.NEWLINE, 0); }
 		public Simple_stmtContext simple_stmt() {
 			return getRuleContext(Simple_stmtContext.class,0);
 		}
@@ -169,11 +177,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_single_input; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterSingle_input(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterSingle_input(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitSingle_input(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitSingle_input(this);
 		}
 	}
 
@@ -259,10 +267,10 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class File_inputContext extends ParserRuleContext {
-		public TerminalNode EOF() { return getToken(Python3Parser.EOF, 0); }
-		public List<TerminalNode> NEWLINE() { return getTokens(Python3Parser.NEWLINE); }
+		public TerminalNode EOF() { return getToken(YaParser.EOF, 0); }
+		public List<TerminalNode> NEWLINE() { return getTokens(YaParser.NEWLINE); }
 		public TerminalNode NEWLINE(int i) {
-			return getToken(Python3Parser.NEWLINE, i);
+			return getToken(YaParser.NEWLINE, i);
 		}
 		public List<StmtContext> stmt() {
 			return getRuleContexts(StmtContext.class);
@@ -276,11 +284,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_file_input; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterFile_input(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterFile_input(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitFile_input(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitFile_input(this);
 		}
 	}
 
@@ -375,10 +383,10 @@ public class Python3Parser extends Parser {
 		public TestlistContext testlist() {
 			return getRuleContext(TestlistContext.class,0);
 		}
-		public TerminalNode EOF() { return getToken(Python3Parser.EOF, 0); }
-		public List<TerminalNode> NEWLINE() { return getTokens(Python3Parser.NEWLINE); }
+		public TerminalNode EOF() { return getToken(YaParser.EOF, 0); }
+		public List<TerminalNode> NEWLINE() { return getTokens(YaParser.NEWLINE); }
 		public TerminalNode NEWLINE(int i) {
-			return getToken(Python3Parser.NEWLINE, i);
+			return getToken(YaParser.NEWLINE, i);
 		}
 		public Eval_inputContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -386,11 +394,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_eval_input; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterEval_input(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterEval_input(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitEval_input(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitEval_input(this);
 		}
 	}
 
@@ -436,7 +444,9 @@ public class Python3Parser extends Parser {
 		public Dotted_nameContext dotted_name() {
 			return getRuleContext(Dotted_nameContext.class,0);
 		}
-		public TerminalNode NEWLINE() { return getToken(Python3Parser.NEWLINE, 0); }
+		public TerminalNode NEWLINE() { return getToken(YaParser.NEWLINE, 0); }
+		public TerminalNode OPEN_PAREN() { return getToken(YaParser.OPEN_PAREN, 0); }
+		public TerminalNode CLOSE_PAREN() { return getToken(YaParser.CLOSE_PAREN, 0); }
 		public ArglistContext arglist() {
 			return getRuleContext(ArglistContext.class,0);
 		}
@@ -446,11 +456,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_decorator; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterDecorator(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterDecorator(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitDecorator(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitDecorator(this);
 		}
 	}
 
@@ -515,11 +525,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_decorators; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterDecorators(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterDecorators(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitDecorators(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitDecorators(this);
 		}
 	}
 
@@ -576,11 +586,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_decorated; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterDecorated(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterDecorated(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitDecorated(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitDecorated(this);
 		}
 	}
 
@@ -630,7 +640,7 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Async_funcdefContext extends ParserRuleContext {
-		public TerminalNode ASYNC() { return getToken(Python3Parser.ASYNC, 0); }
+		public TerminalNode ASYNC() { return getToken(YaParser.ASYNC, 0); }
 		public FuncdefContext funcdef() {
 			return getRuleContext(FuncdefContext.class,0);
 		}
@@ -640,11 +650,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_async_funcdef; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterAsync_funcdef(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterAsync_funcdef(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitAsync_funcdef(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitAsync_funcdef(this);
 		}
 	}
 
@@ -672,10 +682,12 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class FuncdefContext extends ParserRuleContext {
-		public TerminalNode NAME() { return getToken(Python3Parser.NAME, 0); }
+		public TerminalNode DEF() { return getToken(YaParser.DEF, 0); }
+		public TerminalNode NAME() { return getToken(YaParser.NAME, 0); }
 		public ParametersContext parameters() {
 			return getRuleContext(ParametersContext.class,0);
 		}
+		public TerminalNode COLON() { return getToken(YaParser.COLON, 0); }
 		public SuiteContext suite() {
 			return getRuleContext(SuiteContext.class,0);
 		}
@@ -688,11 +700,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_funcdef; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterFuncdef(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterFuncdef(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitFuncdef(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitFuncdef(this);
 		}
 	}
 
@@ -739,6 +751,8 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class ParametersContext extends ParserRuleContext {
+		public TerminalNode OPEN_PAREN() { return getToken(YaParser.OPEN_PAREN, 0); }
+		public TerminalNode CLOSE_PAREN() { return getToken(YaParser.CLOSE_PAREN, 0); }
 		public TypedargslistContext typedargslist() {
 			return getRuleContext(TypedargslistContext.class,0);
 		}
@@ -748,11 +762,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_parameters; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterParameters(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterParameters(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitParameters(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitParameters(this);
 		}
 	}
 
@@ -797,11 +811,17 @@ public class Python3Parser extends Parser {
 		public TfpdefContext tfpdef(int i) {
 			return getRuleContext(TfpdefContext.class,i);
 		}
+		public TerminalNode STAR() { return getToken(YaParser.STAR, 0); }
+		public TerminalNode POWER() { return getToken(YaParser.POWER, 0); }
 		public List<TestContext> test() {
 			return getRuleContexts(TestContext.class);
 		}
 		public TestContext test(int i) {
 			return getRuleContext(TestContext.class,i);
+		}
+		public List<TerminalNode> COMMA() { return getTokens(YaParser.COMMA); }
+		public TerminalNode COMMA(int i) {
+			return getToken(YaParser.COMMA, i);
 		}
 		public TypedargslistContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -809,11 +829,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typedargslist; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterTypedargslist(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterTypedargslist(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitTypedargslist(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitTypedargslist(this);
 		}
 	}
 
@@ -1103,7 +1123,8 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class TfpdefContext extends ParserRuleContext {
-		public TerminalNode NAME() { return getToken(Python3Parser.NAME, 0); }
+		public TerminalNode NAME() { return getToken(YaParser.NAME, 0); }
+		public TerminalNode COLON() { return getToken(YaParser.COLON, 0); }
 		public TestContext test() {
 			return getRuleContext(TestContext.class,0);
 		}
@@ -1113,11 +1134,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_tfpdef; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterTfpdef(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterTfpdef(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitTfpdef(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitTfpdef(this);
 		}
 	}
 
@@ -1162,11 +1183,17 @@ public class Python3Parser extends Parser {
 		public VfpdefContext vfpdef(int i) {
 			return getRuleContext(VfpdefContext.class,i);
 		}
+		public TerminalNode STAR() { return getToken(YaParser.STAR, 0); }
+		public TerminalNode POWER() { return getToken(YaParser.POWER, 0); }
 		public List<TestContext> test() {
 			return getRuleContexts(TestContext.class);
 		}
 		public TestContext test(int i) {
 			return getRuleContext(TestContext.class,i);
+		}
+		public List<TerminalNode> COMMA() { return getTokens(YaParser.COMMA); }
+		public TerminalNode COMMA(int i) {
+			return getToken(YaParser.COMMA, i);
 		}
 		public VarargslistContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1174,11 +1201,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_varargslist; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterVarargslist(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterVarargslist(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitVarargslist(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitVarargslist(this);
 		}
 	}
 
@@ -1468,18 +1495,18 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class VfpdefContext extends ParserRuleContext {
-		public TerminalNode NAME() { return getToken(Python3Parser.NAME, 0); }
+		public TerminalNode NAME() { return getToken(YaParser.NAME, 0); }
 		public VfpdefContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_vfpdef; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterVfpdef(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterVfpdef(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitVfpdef(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitVfpdef(this);
 		}
 	}
 
@@ -1517,11 +1544,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterStmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterStmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitStmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitStmt(this);
 		}
 	}
 
@@ -1604,18 +1631,22 @@ public class Python3Parser extends Parser {
 		public Small_stmtContext small_stmt(int i) {
 			return getRuleContext(Small_stmtContext.class,i);
 		}
-		public TerminalNode NEWLINE() { return getToken(Python3Parser.NEWLINE, 0); }
+		public TerminalNode NEWLINE() { return getToken(YaParser.NEWLINE, 0); }
+		public List<TerminalNode> SEMI_COLON() { return getTokens(YaParser.SEMI_COLON); }
+		public TerminalNode SEMI_COLON(int i) {
+			return getToken(YaParser.SEMI_COLON, i);
+		}
 		public Simple_stmtContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_simple_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterSimple_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterSimple_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitSimple_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitSimple_stmt(this);
 		}
 	}
 
@@ -1703,11 +1734,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_small_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterSmall_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterSmall_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitSmall_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitSmall_stmt(this);
 		}
 	}
 
@@ -1833,11 +1864,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_expr_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterExpr_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterExpr_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitExpr_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitExpr_stmt(this);
 		}
 	}
 
@@ -1981,6 +2012,7 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class AnnassignContext extends ParserRuleContext {
+		public TerminalNode COLON() { return getToken(YaParser.COLON, 0); }
 		public List<TestContext> test() {
 			return getRuleContexts(TestContext.class);
 		}
@@ -1993,11 +2025,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_annassign; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterAnnassign(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterAnnassign(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitAnnassign(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitAnnassign(this);
 		}
 	}
 
@@ -2050,17 +2082,21 @@ public class Python3Parser extends Parser {
 		public Star_exprContext star_expr(int i) {
 			return getRuleContext(Star_exprContext.class,i);
 		}
+		public List<TerminalNode> COMMA() { return getTokens(YaParser.COMMA); }
+		public TerminalNode COMMA(int i) {
+			return getToken(YaParser.COMMA, i);
+		}
 		public Testlist_star_exprContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_testlist_star_expr; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterTestlist_star_expr(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterTestlist_star_expr(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitTestlist_star_expr(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitTestlist_star_expr(this);
 		}
 	}
 
@@ -2178,17 +2214,18 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class AugassignContext extends ParserRuleContext {
+		public TerminalNode MOD_ASSIGN() { return getToken(YaParser.MOD_ASSIGN, 0); }
 		public AugassignContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_augassign; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterAugassign(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterAugassign(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitAugassign(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitAugassign(this);
 		}
 	}
 
@@ -2223,6 +2260,7 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Del_stmtContext extends ParserRuleContext {
+		public TerminalNode DEL() { return getToken(YaParser.DEL, 0); }
 		public ExprlistContext exprlist() {
 			return getRuleContext(ExprlistContext.class,0);
 		}
@@ -2232,11 +2270,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_del_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterDel_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterDel_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitDel_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitDel_stmt(this);
 		}
 	}
 
@@ -2264,17 +2302,18 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Pass_stmtContext extends ParserRuleContext {
+		public TerminalNode PASS() { return getToken(YaParser.PASS, 0); }
 		public Pass_stmtContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_pass_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterPass_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterPass_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitPass_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitPass_stmt(this);
 		}
 	}
 
@@ -2321,11 +2360,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_flow_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterFlow_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterFlow_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitFlow_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitFlow_stmt(this);
 		}
 	}
 
@@ -2387,17 +2426,18 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Break_stmtContext extends ParserRuleContext {
+		public TerminalNode BREAK() { return getToken(YaParser.BREAK, 0); }
 		public Break_stmtContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_break_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterBreak_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterBreak_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitBreak_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitBreak_stmt(this);
 		}
 	}
 
@@ -2423,17 +2463,18 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Continue_stmtContext extends ParserRuleContext {
+		public TerminalNode CONTINUE() { return getToken(YaParser.CONTINUE, 0); }
 		public Continue_stmtContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_continue_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterContinue_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterContinue_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitContinue_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitContinue_stmt(this);
 		}
 	}
 
@@ -2459,6 +2500,7 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Return_stmtContext extends ParserRuleContext {
+		public TerminalNode RETURN() { return getToken(YaParser.RETURN, 0); }
 		public TestlistContext testlist() {
 			return getRuleContext(TestlistContext.class,0);
 		}
@@ -2468,11 +2510,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_return_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterReturn_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterReturn_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitReturn_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitReturn_stmt(this);
 		}
 	}
 
@@ -2518,11 +2560,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_yield_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterYield_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterYield_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitYield_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitYield_stmt(this);
 		}
 	}
 
@@ -2548,23 +2590,25 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Raise_stmtContext extends ParserRuleContext {
+		public TerminalNode RAISE() { return getToken(YaParser.RAISE, 0); }
 		public List<TestContext> test() {
 			return getRuleContexts(TestContext.class);
 		}
 		public TestContext test(int i) {
 			return getRuleContext(TestContext.class,i);
 		}
+		public TerminalNode FROM() { return getToken(YaParser.FROM, 0); }
 		public Raise_stmtContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_raise_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterRaise_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterRaise_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitRaise_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitRaise_stmt(this);
 		}
 	}
 
@@ -2625,11 +2669,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_import_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterImport_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterImport_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitImport_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitImport_stmt(this);
 		}
 	}
 
@@ -2670,6 +2714,7 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Import_nameContext extends ParserRuleContext {
+		public TerminalNode IMPORT() { return getToken(YaParser.IMPORT, 0); }
 		public Dotted_as_namesContext dotted_as_names() {
 			return getRuleContext(Dotted_as_namesContext.class,0);
 		}
@@ -2679,11 +2724,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_import_name; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterImport_name(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterImport_name(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitImport_name(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitImport_name(this);
 		}
 	}
 
@@ -2711,11 +2756,24 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Import_fromContext extends ParserRuleContext {
+		public TerminalNode FROM() { return getToken(YaParser.FROM, 0); }
+		public TerminalNode IMPORT() { return getToken(YaParser.IMPORT, 0); }
 		public Dotted_nameContext dotted_name() {
 			return getRuleContext(Dotted_nameContext.class,0);
 		}
+		public TerminalNode STAR() { return getToken(YaParser.STAR, 0); }
+		public TerminalNode OPEN_PAREN() { return getToken(YaParser.OPEN_PAREN, 0); }
 		public Import_as_namesContext import_as_names() {
 			return getRuleContext(Import_as_namesContext.class,0);
+		}
+		public TerminalNode CLOSE_PAREN() { return getToken(YaParser.CLOSE_PAREN, 0); }
+		public List<TerminalNode> DOT() { return getTokens(YaParser.DOT); }
+		public TerminalNode DOT(int i) {
+			return getToken(YaParser.DOT, i);
+		}
+		public List<TerminalNode> ELLIPSIS() { return getTokens(YaParser.ELLIPSIS); }
+		public TerminalNode ELLIPSIS(int i) {
+			return getToken(YaParser.ELLIPSIS, i);
 		}
 		public Import_fromContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2723,11 +2781,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_import_from; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterImport_from(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterImport_from(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitImport_from(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitImport_from(this);
 		}
 	}
 
@@ -2844,21 +2902,22 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Import_as_nameContext extends ParserRuleContext {
-		public List<TerminalNode> NAME() { return getTokens(Python3Parser.NAME); }
+		public List<TerminalNode> NAME() { return getTokens(YaParser.NAME); }
 		public TerminalNode NAME(int i) {
-			return getToken(Python3Parser.NAME, i);
+			return getToken(YaParser.NAME, i);
 		}
+		public TerminalNode AS() { return getToken(YaParser.AS, 0); }
 		public Import_as_nameContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_import_as_name; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterImport_as_name(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterImport_as_name(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitImport_as_name(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitImport_as_name(this);
 		}
 	}
 
@@ -2900,18 +2959,19 @@ public class Python3Parser extends Parser {
 		public Dotted_nameContext dotted_name() {
 			return getRuleContext(Dotted_nameContext.class,0);
 		}
-		public TerminalNode NAME() { return getToken(Python3Parser.NAME, 0); }
+		public TerminalNode AS() { return getToken(YaParser.AS, 0); }
+		public TerminalNode NAME() { return getToken(YaParser.NAME, 0); }
 		public Dotted_as_nameContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_dotted_as_name; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterDotted_as_name(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterDotted_as_name(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitDotted_as_name(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitDotted_as_name(this);
 		}
 	}
 
@@ -2956,17 +3016,21 @@ public class Python3Parser extends Parser {
 		public Import_as_nameContext import_as_name(int i) {
 			return getRuleContext(Import_as_nameContext.class,i);
 		}
+		public List<TerminalNode> COMMA() { return getTokens(YaParser.COMMA); }
+		public TerminalNode COMMA(int i) {
+			return getToken(YaParser.COMMA, i);
+		}
 		public Import_as_namesContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_import_as_names; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterImport_as_names(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterImport_as_names(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitImport_as_names(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitImport_as_names(this);
 		}
 	}
 
@@ -3028,17 +3092,21 @@ public class Python3Parser extends Parser {
 		public Dotted_as_nameContext dotted_as_name(int i) {
 			return getRuleContext(Dotted_as_nameContext.class,i);
 		}
+		public List<TerminalNode> COMMA() { return getTokens(YaParser.COMMA); }
+		public TerminalNode COMMA(int i) {
+			return getToken(YaParser.COMMA, i);
+		}
 		public Dotted_as_namesContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_dotted_as_names; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterDotted_as_names(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterDotted_as_names(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitDotted_as_names(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitDotted_as_names(this);
 		}
 	}
 
@@ -3081,9 +3149,13 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Dotted_nameContext extends ParserRuleContext {
-		public List<TerminalNode> NAME() { return getTokens(Python3Parser.NAME); }
+		public List<TerminalNode> NAME() { return getTokens(YaParser.NAME); }
 		public TerminalNode NAME(int i) {
-			return getToken(Python3Parser.NAME, i);
+			return getToken(YaParser.NAME, i);
+		}
+		public List<TerminalNode> DOT() { return getTokens(YaParser.DOT); }
+		public TerminalNode DOT(int i) {
+			return getToken(YaParser.DOT, i);
 		}
 		public Dotted_nameContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3091,11 +3163,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_dotted_name; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterDotted_name(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterDotted_name(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitDotted_name(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitDotted_name(this);
 		}
 	}
 
@@ -3138,9 +3210,14 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Global_stmtContext extends ParserRuleContext {
-		public List<TerminalNode> NAME() { return getTokens(Python3Parser.NAME); }
+		public TerminalNode GLOBAL() { return getToken(YaParser.GLOBAL, 0); }
+		public List<TerminalNode> NAME() { return getTokens(YaParser.NAME); }
 		public TerminalNode NAME(int i) {
-			return getToken(Python3Parser.NAME, i);
+			return getToken(YaParser.NAME, i);
+		}
+		public List<TerminalNode> COMMA() { return getTokens(YaParser.COMMA); }
+		public TerminalNode COMMA(int i) {
+			return getToken(YaParser.COMMA, i);
 		}
 		public Global_stmtContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3148,11 +3225,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_global_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterGlobal_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterGlobal_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitGlobal_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitGlobal_stmt(this);
 		}
 	}
 
@@ -3197,9 +3274,14 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Nonlocal_stmtContext extends ParserRuleContext {
-		public List<TerminalNode> NAME() { return getTokens(Python3Parser.NAME); }
+		public TerminalNode NONLOCAL() { return getToken(YaParser.NONLOCAL, 0); }
+		public List<TerminalNode> NAME() { return getTokens(YaParser.NAME); }
 		public TerminalNode NAME(int i) {
-			return getToken(Python3Parser.NAME, i);
+			return getToken(YaParser.NAME, i);
+		}
+		public List<TerminalNode> COMMA() { return getTokens(YaParser.COMMA); }
+		public TerminalNode COMMA(int i) {
+			return getToken(YaParser.COMMA, i);
 		}
 		public Nonlocal_stmtContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3207,11 +3289,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_nonlocal_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterNonlocal_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterNonlocal_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitNonlocal_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitNonlocal_stmt(this);
 		}
 	}
 
@@ -3256,23 +3338,25 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Assert_stmtContext extends ParserRuleContext {
+		public TerminalNode ASSERT() { return getToken(YaParser.ASSERT, 0); }
 		public List<TestContext> test() {
 			return getRuleContexts(TestContext.class);
 		}
 		public TestContext test(int i) {
 			return getRuleContext(TestContext.class,i);
 		}
+		public TerminalNode COMMA() { return getToken(YaParser.COMMA, 0); }
 		public Assert_stmtContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_assert_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterAssert_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterAssert_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitAssert_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitAssert_stmt(this);
 		}
 	}
 
@@ -3346,11 +3430,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_compound_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterCompound_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterCompound_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitCompound_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitCompound_stmt(this);
 		}
 	}
 
@@ -3440,7 +3524,7 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Async_stmtContext extends ParserRuleContext {
-		public TerminalNode ASYNC() { return getToken(Python3Parser.ASYNC, 0); }
+		public TerminalNode ASYNC() { return getToken(YaParser.ASYNC, 0); }
 		public FuncdefContext funcdef() {
 			return getRuleContext(FuncdefContext.class,0);
 		}
@@ -3456,11 +3540,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_async_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterAsync_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterAsync_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitAsync_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitAsync_stmt(this);
 		}
 	}
 
@@ -3510,11 +3594,16 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class If_stmtContext extends ParserRuleContext {
+		public TerminalNode IF() { return getToken(YaParser.IF, 0); }
 		public List<TestContext> test() {
 			return getRuleContexts(TestContext.class);
 		}
 		public TestContext test(int i) {
 			return getRuleContext(TestContext.class,i);
+		}
+		public List<TerminalNode> COLON() { return getTokens(YaParser.COLON); }
+		public TerminalNode COLON(int i) {
+			return getToken(YaParser.COLON, i);
 		}
 		public List<SuiteContext> suite() {
 			return getRuleContexts(SuiteContext.class);
@@ -3522,17 +3611,22 @@ public class Python3Parser extends Parser {
 		public SuiteContext suite(int i) {
 			return getRuleContext(SuiteContext.class,i);
 		}
+		public List<TerminalNode> ELIF() { return getTokens(YaParser.ELIF); }
+		public TerminalNode ELIF(int i) {
+			return getToken(YaParser.ELIF, i);
+		}
+		public TerminalNode ELSE() { return getToken(YaParser.ELSE, 0); }
 		public If_stmtContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_if_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterIf_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterIf_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitIf_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitIf_stmt(this);
 		}
 	}
 
@@ -3599,8 +3693,13 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class While_stmtContext extends ParserRuleContext {
+		public TerminalNode WHILE() { return getToken(YaParser.WHILE, 0); }
 		public TestContext test() {
 			return getRuleContext(TestContext.class,0);
+		}
+		public List<TerminalNode> COLON() { return getTokens(YaParser.COLON); }
+		public TerminalNode COLON(int i) {
+			return getToken(YaParser.COLON, i);
 		}
 		public List<SuiteContext> suite() {
 			return getRuleContexts(SuiteContext.class);
@@ -3608,17 +3707,18 @@ public class Python3Parser extends Parser {
 		public SuiteContext suite(int i) {
 			return getRuleContext(SuiteContext.class,i);
 		}
+		public TerminalNode ELSE() { return getToken(YaParser.ELSE, 0); }
 		public While_stmtContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_while_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterWhile_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterWhile_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitWhile_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitWhile_stmt(this);
 		}
 	}
 
@@ -3665,11 +3765,17 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class For_stmtContext extends ParserRuleContext {
+		public TerminalNode FOR() { return getToken(YaParser.FOR, 0); }
 		public ExprlistContext exprlist() {
 			return getRuleContext(ExprlistContext.class,0);
 		}
+		public TerminalNode IN() { return getToken(YaParser.IN, 0); }
 		public TestlistContext testlist() {
 			return getRuleContext(TestlistContext.class,0);
+		}
+		public List<TerminalNode> COLON() { return getTokens(YaParser.COLON); }
+		public TerminalNode COLON(int i) {
+			return getToken(YaParser.COLON, i);
 		}
 		public List<SuiteContext> suite() {
 			return getRuleContexts(SuiteContext.class);
@@ -3677,17 +3783,18 @@ public class Python3Parser extends Parser {
 		public SuiteContext suite(int i) {
 			return getRuleContext(SuiteContext.class,i);
 		}
+		public TerminalNode ELSE() { return getToken(YaParser.ELSE, 0); }
 		public For_stmtContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_for_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterFor_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterFor_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitFor_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitFor_stmt(this);
 		}
 	}
 
@@ -3738,29 +3845,36 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Try_stmtContext extends ParserRuleContext {
+		public TerminalNode TRY() { return getToken(YaParser.TRY, 0); }
+		public List<TerminalNode> COLON() { return getTokens(YaParser.COLON); }
+		public TerminalNode COLON(int i) {
+			return getToken(YaParser.COLON, i);
+		}
 		public List<SuiteContext> suite() {
 			return getRuleContexts(SuiteContext.class);
 		}
 		public SuiteContext suite(int i) {
 			return getRuleContext(SuiteContext.class,i);
 		}
+		public TerminalNode FINALLY() { return getToken(YaParser.FINALLY, 0); }
 		public List<Except_clauseContext> except_clause() {
 			return getRuleContexts(Except_clauseContext.class);
 		}
 		public Except_clauseContext except_clause(int i) {
 			return getRuleContext(Except_clauseContext.class,i);
 		}
+		public TerminalNode ELSE() { return getToken(YaParser.ELSE, 0); }
 		public Try_stmtContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_try_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterTry_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterTry_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitTry_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitTry_stmt(this);
 		}
 	}
 
@@ -3859,14 +3973,20 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class With_stmtContext extends ParserRuleContext {
+		public TerminalNode WITH() { return getToken(YaParser.WITH, 0); }
 		public List<With_itemContext> with_item() {
 			return getRuleContexts(With_itemContext.class);
 		}
 		public With_itemContext with_item(int i) {
 			return getRuleContext(With_itemContext.class,i);
 		}
+		public TerminalNode COLON() { return getToken(YaParser.COLON, 0); }
 		public SuiteContext suite() {
 			return getRuleContext(SuiteContext.class,0);
+		}
+		public List<TerminalNode> COMMA() { return getTokens(YaParser.COMMA); }
+		public TerminalNode COMMA(int i) {
+			return getToken(YaParser.COMMA, i);
 		}
 		public With_stmtContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3874,11 +3994,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_with_stmt; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterWith_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterWith_stmt(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitWith_stmt(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitWith_stmt(this);
 		}
 	}
 
@@ -3930,6 +4050,7 @@ public class Python3Parser extends Parser {
 		public TestContext test() {
 			return getRuleContext(TestContext.class,0);
 		}
+		public TerminalNode AS() { return getToken(YaParser.AS, 0); }
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
@@ -3939,11 +4060,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_with_item; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterWith_item(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterWith_item(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitWith_item(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitWith_item(this);
 		}
 	}
 
@@ -3982,21 +4103,23 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Except_clauseContext extends ParserRuleContext {
+		public TerminalNode EXCEPT() { return getToken(YaParser.EXCEPT, 0); }
 		public TestContext test() {
 			return getRuleContext(TestContext.class,0);
 		}
-		public TerminalNode NAME() { return getToken(Python3Parser.NAME, 0); }
+		public TerminalNode AS() { return getToken(YaParser.AS, 0); }
+		public TerminalNode NAME() { return getToken(YaParser.NAME, 0); }
 		public Except_clauseContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_except_clause; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterExcept_clause(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterExcept_clause(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitExcept_clause(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitExcept_clause(this);
 		}
 	}
 
@@ -4048,9 +4171,9 @@ public class Python3Parser extends Parser {
 		public Simple_stmtContext simple_stmt() {
 			return getRuleContext(Simple_stmtContext.class,0);
 		}
-		public TerminalNode NEWLINE() { return getToken(Python3Parser.NEWLINE, 0); }
-		public TerminalNode INDENT() { return getToken(Python3Parser.INDENT, 0); }
-		public TerminalNode DEDENT() { return getToken(Python3Parser.DEDENT, 0); }
+		public TerminalNode NEWLINE() { return getToken(YaParser.NEWLINE, 0); }
+		public TerminalNode INDENT() { return getToken(YaParser.INDENT, 0); }
+		public TerminalNode DEDENT() { return getToken(YaParser.DEDENT, 0); }
 		public List<StmtContext> stmt() {
 			return getRuleContexts(StmtContext.class);
 		}
@@ -4063,11 +4186,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_suite; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterSuite(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterSuite(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitSuite(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitSuite(this);
 		}
 	}
 
@@ -4161,6 +4284,8 @@ public class Python3Parser extends Parser {
 		public Or_testContext or_test(int i) {
 			return getRuleContext(Or_testContext.class,i);
 		}
+		public TerminalNode IF() { return getToken(YaParser.IF, 0); }
+		public TerminalNode ELSE() { return getToken(YaParser.ELSE, 0); }
 		public TestContext test() {
 			return getRuleContext(TestContext.class,0);
 		}
@@ -4173,11 +4298,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_test; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterTest(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterTest(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitTest(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitTest(this);
 		}
 	}
 
@@ -4261,11 +4386,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_test_nocond; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterTest_nocond(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterTest_nocond(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitTest_nocond(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitTest_nocond(this);
 		}
 	}
 
@@ -4320,6 +4445,8 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class LambdefContext extends ParserRuleContext {
+		public TerminalNode LAMBDA() { return getToken(YaParser.LAMBDA, 0); }
+		public TerminalNode COLON() { return getToken(YaParser.COLON, 0); }
 		public TestContext test() {
 			return getRuleContext(TestContext.class,0);
 		}
@@ -4332,11 +4459,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_lambdef; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterLambdef(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterLambdef(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitLambdef(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitLambdef(this);
 		}
 	}
 
@@ -4377,6 +4504,8 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Lambdef_nocondContext extends ParserRuleContext {
+		public TerminalNode LAMBDA() { return getToken(YaParser.LAMBDA, 0); }
+		public TerminalNode COLON() { return getToken(YaParser.COLON, 0); }
 		public Test_nocondContext test_nocond() {
 			return getRuleContext(Test_nocondContext.class,0);
 		}
@@ -4389,11 +4518,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_lambdef_nocond; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterLambdef_nocond(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterLambdef_nocond(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitLambdef_nocond(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitLambdef_nocond(this);
 		}
 	}
 
@@ -4440,17 +4569,21 @@ public class Python3Parser extends Parser {
 		public And_testContext and_test(int i) {
 			return getRuleContext(And_testContext.class,i);
 		}
+		public List<TerminalNode> OR() { return getTokens(YaParser.OR); }
+		public TerminalNode OR(int i) {
+			return getToken(YaParser.OR, i);
+		}
 		public Or_testContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_or_test; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterOr_test(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterOr_test(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitOr_test(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitOr_test(this);
 		}
 	}
 
@@ -4499,17 +4632,21 @@ public class Python3Parser extends Parser {
 		public Not_testContext not_test(int i) {
 			return getRuleContext(Not_testContext.class,i);
 		}
+		public List<TerminalNode> AND() { return getTokens(YaParser.AND); }
+		public TerminalNode AND(int i) {
+			return getToken(YaParser.AND, i);
+		}
 		public And_testContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_and_test; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterAnd_test(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterAnd_test(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitAnd_test(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitAnd_test(this);
 		}
 	}
 
@@ -4552,6 +4689,7 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Not_testContext extends ParserRuleContext {
+		public TerminalNode NOT() { return getToken(YaParser.NOT, 0); }
 		public Not_testContext not_test() {
 			return getRuleContext(Not_testContext.class,0);
 		}
@@ -4564,11 +4702,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_not_test; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterNot_test(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterNot_test(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitNot_test(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitNot_test(this);
 		}
 	}
 
@@ -4642,11 +4780,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_comparison; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterComparison(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterComparison(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitComparison(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitComparison(this);
 		}
 	}
 
@@ -4689,17 +4827,20 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Comp_opContext extends ParserRuleContext {
+		public TerminalNode IN() { return getToken(YaParser.IN, 0); }
+		public TerminalNode NOT() { return getToken(YaParser.NOT, 0); }
+		public TerminalNode IS() { return getToken(YaParser.IS, 0); }
 		public Comp_opContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_comp_op; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterComp_op(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterComp_op(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitComp_op(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitComp_op(this);
 		}
 	}
 
@@ -4805,6 +4946,7 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Star_exprContext extends ParserRuleContext {
+		public TerminalNode STAR() { return getToken(YaParser.STAR, 0); }
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
@@ -4814,11 +4956,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_star_expr; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterStar_expr(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterStar_expr(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitStar_expr(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitStar_expr(this);
 		}
 	}
 
@@ -4858,11 +5000,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_expr; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterExpr(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterExpr(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitExpr(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitExpr(this);
 		}
 	}
 
@@ -4917,11 +5059,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_xor_expr; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterXor_expr(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterXor_expr(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitXor_expr(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitXor_expr(this);
 		}
 	}
 
@@ -4976,11 +5118,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_and_expr; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterAnd_expr(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterAnd_expr(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitAnd_expr(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitAnd_expr(this);
 		}
 	}
 
@@ -5035,11 +5177,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_shift_expr; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterShift_expr(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterShift_expr(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitShift_expr(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitShift_expr(this);
 		}
 	}
 
@@ -5102,11 +5244,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_arith_expr; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterArith_expr(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterArith_expr(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitArith_expr(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitArith_expr(this);
 		}
 	}
 
@@ -5163,17 +5305,25 @@ public class Python3Parser extends Parser {
 		public FactorContext factor(int i) {
 			return getRuleContext(FactorContext.class,i);
 		}
+		public List<TerminalNode> STAR() { return getTokens(YaParser.STAR); }
+		public TerminalNode STAR(int i) {
+			return getToken(YaParser.STAR, i);
+		}
+		public List<TerminalNode> MOD() { return getTokens(YaParser.MOD); }
+		public TerminalNode MOD(int i) {
+			return getToken(YaParser.MOD, i);
+		}
 		public TermContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_term; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterTerm(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterTerm(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitTerm(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitTerm(this);
 		}
 	}
 
@@ -5236,11 +5386,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_factor; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterFactor(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterFactor(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitFactor(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitFactor(this);
 		}
 	}
 
@@ -5307,6 +5457,7 @@ public class Python3Parser extends Parser {
 		public Atom_exprContext atom_expr() {
 			return getRuleContext(Atom_exprContext.class,0);
 		}
+		public TerminalNode POWER() { return getToken(YaParser.POWER, 0); }
 		public FactorContext factor() {
 			return getRuleContext(FactorContext.class,0);
 		}
@@ -5316,11 +5467,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_power; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterPower(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterPower(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitPower(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitPower(this);
 		}
 	}
 
@@ -5362,7 +5513,7 @@ public class Python3Parser extends Parser {
 		public AtomContext atom() {
 			return getRuleContext(AtomContext.class,0);
 		}
-		public TerminalNode AWAIT() { return getToken(Python3Parser.AWAIT, 0); }
+		public TerminalNode AWAIT() { return getToken(YaParser.AWAIT, 0); }
 		public List<TrailerContext> trailer() {
 			return getRuleContexts(TrailerContext.class);
 		}
@@ -5375,11 +5526,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_atom_expr; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterAtom_expr(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterAtom_expr(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitAtom_expr(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitAtom_expr(this);
 		}
 	}
 
@@ -5430,8 +5581,14 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class AtomContext extends ParserRuleContext {
-		public TerminalNode NAME() { return getToken(Python3Parser.NAME, 0); }
-		public TerminalNode NUMBER() { return getToken(Python3Parser.NUMBER, 0); }
+		public TerminalNode OPEN_PAREN() { return getToken(YaParser.OPEN_PAREN, 0); }
+		public TerminalNode CLOSE_PAREN() { return getToken(YaParser.CLOSE_PAREN, 0); }
+		public TerminalNode NAME() { return getToken(YaParser.NAME, 0); }
+		public TerminalNode NUMBER() { return getToken(YaParser.NUMBER, 0); }
+		public TerminalNode ELLIPSIS() { return getToken(YaParser.ELLIPSIS, 0); }
+		public TerminalNode NONE() { return getToken(YaParser.NONE, 0); }
+		public TerminalNode TRUE() { return getToken(YaParser.TRUE, 0); }
+		public TerminalNode FALSE() { return getToken(YaParser.FALSE, 0); }
 		public Yield_exprContext yield_expr() {
 			return getRuleContext(Yield_exprContext.class,0);
 		}
@@ -5441,9 +5598,9 @@ public class Python3Parser extends Parser {
 		public DictorsetmakerContext dictorsetmaker() {
 			return getRuleContext(DictorsetmakerContext.class,0);
 		}
-		public List<TerminalNode> STRING() { return getTokens(Python3Parser.STRING); }
+		public List<TerminalNode> STRING() { return getTokens(YaParser.STRING); }
 		public TerminalNode STRING(int i) {
-			return getToken(Python3Parser.STRING, i);
+			return getToken(YaParser.STRING, i);
 		}
 		public AtomContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5451,11 +5608,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_atom; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterAtom(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterAtom(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitAtom(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitAtom(this);
 		}
 	}
 
@@ -5635,17 +5792,21 @@ public class Python3Parser extends Parser {
 		public Comp_forContext comp_for() {
 			return getRuleContext(Comp_forContext.class,0);
 		}
+		public List<TerminalNode> COMMA() { return getTokens(YaParser.COMMA); }
+		public TerminalNode COMMA(int i) {
+			return getToken(YaParser.COMMA, i);
+		}
 		public Testlist_compContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_testlist_comp; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterTestlist_comp(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterTestlist_comp(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitTestlist_comp(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitTestlist_comp(this);
 		}
 	}
 
@@ -5782,24 +5943,27 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class TrailerContext extends ParserRuleContext {
+		public TerminalNode OPEN_PAREN() { return getToken(YaParser.OPEN_PAREN, 0); }
+		public TerminalNode CLOSE_PAREN() { return getToken(YaParser.CLOSE_PAREN, 0); }
 		public ArglistContext arglist() {
 			return getRuleContext(ArglistContext.class,0);
 		}
 		public SubscriptlistContext subscriptlist() {
 			return getRuleContext(SubscriptlistContext.class,0);
 		}
-		public TerminalNode NAME() { return getToken(Python3Parser.NAME, 0); }
+		public TerminalNode DOT() { return getToken(YaParser.DOT, 0); }
+		public TerminalNode NAME() { return getToken(YaParser.NAME, 0); }
 		public TrailerContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_trailer; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterTrailer(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterTrailer(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitTrailer(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitTrailer(this);
 		}
 	}
 
@@ -5872,17 +6036,21 @@ public class Python3Parser extends Parser {
 		public SubscriptContext subscript(int i) {
 			return getRuleContext(SubscriptContext.class,i);
 		}
+		public List<TerminalNode> COMMA() { return getTokens(YaParser.COMMA); }
+		public TerminalNode COMMA(int i) {
+			return getToken(YaParser.COMMA, i);
+		}
 		public SubscriptlistContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_subscriptlist; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterSubscriptlist(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterSubscriptlist(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitSubscriptlist(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitSubscriptlist(this);
 		}
 	}
 
@@ -5944,6 +6112,7 @@ public class Python3Parser extends Parser {
 		public TestContext test(int i) {
 			return getRuleContext(TestContext.class,i);
 		}
+		public TerminalNode COLON() { return getToken(YaParser.COLON, 0); }
 		public SliceopContext sliceop() {
 			return getRuleContext(SliceopContext.class,0);
 		}
@@ -5953,11 +6122,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_subscript; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterSubscript(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterSubscript(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitSubscript(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitSubscript(this);
 		}
 	}
 
@@ -6027,6 +6196,7 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class SliceopContext extends ParserRuleContext {
+		public TerminalNode COLON() { return getToken(YaParser.COLON, 0); }
 		public TestContext test() {
 			return getRuleContext(TestContext.class,0);
 		}
@@ -6036,11 +6206,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_sliceop; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterSliceop(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterSliceop(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitSliceop(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitSliceop(this);
 		}
 	}
 
@@ -6089,17 +6259,21 @@ public class Python3Parser extends Parser {
 		public Star_exprContext star_expr(int i) {
 			return getRuleContext(Star_exprContext.class,i);
 		}
+		public List<TerminalNode> COMMA() { return getTokens(YaParser.COMMA); }
+		public TerminalNode COMMA(int i) {
+			return getToken(YaParser.COMMA, i);
+		}
 		public ExprlistContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_exprlist; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterExprlist(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterExprlist(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitExprlist(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitExprlist(this);
 		}
 	}
 
@@ -6219,17 +6393,21 @@ public class Python3Parser extends Parser {
 		public TestContext test(int i) {
 			return getRuleContext(TestContext.class,i);
 		}
+		public List<TerminalNode> COMMA() { return getTokens(YaParser.COMMA); }
+		public TerminalNode COMMA(int i) {
+			return getToken(YaParser.COMMA, i);
+		}
 		public TestlistContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_testlist; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterTestlist(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterTestlist(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitTestlist(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitTestlist(this);
 		}
 	}
 
@@ -6291,6 +6469,14 @@ public class Python3Parser extends Parser {
 		public TestContext test(int i) {
 			return getRuleContext(TestContext.class,i);
 		}
+		public List<TerminalNode> COLON() { return getTokens(YaParser.COLON); }
+		public TerminalNode COLON(int i) {
+			return getToken(YaParser.COLON, i);
+		}
+		public List<TerminalNode> POWER() { return getTokens(YaParser.POWER); }
+		public TerminalNode POWER(int i) {
+			return getToken(YaParser.POWER, i);
+		}
 		public List<ExprContext> expr() {
 			return getRuleContexts(ExprContext.class);
 		}
@@ -6306,17 +6492,21 @@ public class Python3Parser extends Parser {
 		public Star_exprContext star_expr(int i) {
 			return getRuleContext(Star_exprContext.class,i);
 		}
+		public List<TerminalNode> COMMA() { return getTokens(YaParser.COMMA); }
+		public TerminalNode COMMA(int i) {
+			return getToken(YaParser.COMMA, i);
+		}
 		public DictorsetmakerContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_dictorsetmaker; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterDictorsetmaker(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterDictorsetmaker(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitDictorsetmaker(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitDictorsetmaker(this);
 		}
 	}
 
@@ -6590,10 +6780,14 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class ClassdefContext extends ParserRuleContext {
-		public TerminalNode NAME() { return getToken(Python3Parser.NAME, 0); }
+		public TerminalNode CLASS() { return getToken(YaParser.CLASS, 0); }
+		public TerminalNode NAME() { return getToken(YaParser.NAME, 0); }
+		public TerminalNode COLON() { return getToken(YaParser.COLON, 0); }
 		public SuiteContext suite() {
 			return getRuleContext(SuiteContext.class,0);
 		}
+		public TerminalNode OPEN_PAREN() { return getToken(YaParser.OPEN_PAREN, 0); }
+		public TerminalNode CLOSE_PAREN() { return getToken(YaParser.CLOSE_PAREN, 0); }
 		public ArglistContext arglist() {
 			return getRuleContext(ArglistContext.class,0);
 		}
@@ -6603,11 +6797,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_classdef; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterClassdef(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterClassdef(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitClassdef(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitClassdef(this);
 		}
 	}
 
@@ -6668,17 +6862,21 @@ public class Python3Parser extends Parser {
 		public ArgumentContext argument(int i) {
 			return getRuleContext(ArgumentContext.class,i);
 		}
+		public List<TerminalNode> COMMA() { return getTokens(YaParser.COMMA); }
+		public TerminalNode COMMA(int i) {
+			return getToken(YaParser.COMMA, i);
+		}
 		public ArglistContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_arglist; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterArglist(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterArglist(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitArglist(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitArglist(this);
 		}
 	}
 
@@ -6740,6 +6938,8 @@ public class Python3Parser extends Parser {
 		public TestContext test(int i) {
 			return getRuleContext(TestContext.class,i);
 		}
+		public TerminalNode POWER() { return getToken(YaParser.POWER, 0); }
+		public TerminalNode STAR() { return getToken(YaParser.STAR, 0); }
 		public Comp_forContext comp_for() {
 			return getRuleContext(Comp_forContext.class,0);
 		}
@@ -6749,11 +6949,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_argument; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterArgument(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterArgument(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitArgument(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitArgument(this);
 		}
 	}
 
@@ -6836,11 +7036,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_comp_iter; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterComp_iter(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterComp_iter(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitComp_iter(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitComp_iter(this);
 		}
 	}
 
@@ -6882,13 +7082,15 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Comp_forContext extends ParserRuleContext {
+		public TerminalNode FOR() { return getToken(YaParser.FOR, 0); }
 		public ExprlistContext exprlist() {
 			return getRuleContext(ExprlistContext.class,0);
 		}
+		public TerminalNode IN() { return getToken(YaParser.IN, 0); }
 		public Or_testContext or_test() {
 			return getRuleContext(Or_testContext.class,0);
 		}
-		public TerminalNode ASYNC() { return getToken(Python3Parser.ASYNC, 0); }
+		public TerminalNode ASYNC() { return getToken(YaParser.ASYNC, 0); }
 		public Comp_iterContext comp_iter() {
 			return getRuleContext(Comp_iterContext.class,0);
 		}
@@ -6898,11 +7100,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_comp_for; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterComp_for(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterComp_for(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitComp_for(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitComp_for(this);
 		}
 	}
 
@@ -6955,6 +7157,7 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Comp_ifContext extends ParserRuleContext {
+		public TerminalNode IF() { return getToken(YaParser.IF, 0); }
 		public Test_nocondContext test_nocond() {
 			return getRuleContext(Test_nocondContext.class,0);
 		}
@@ -6967,11 +7170,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_comp_if; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterComp_if(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterComp_if(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitComp_if(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitComp_if(this);
 		}
 	}
 
@@ -7010,18 +7213,18 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Encoding_declContext extends ParserRuleContext {
-		public TerminalNode NAME() { return getToken(Python3Parser.NAME, 0); }
+		public TerminalNode NAME() { return getToken(YaParser.NAME, 0); }
 		public Encoding_declContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_encoding_decl; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterEncoding_decl(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterEncoding_decl(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitEncoding_decl(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitEncoding_decl(this);
 		}
 	}
 
@@ -7047,6 +7250,7 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Yield_exprContext extends ParserRuleContext {
+		public TerminalNode YIELD() { return getToken(YaParser.YIELD, 0); }
 		public Yield_argContext yield_arg() {
 			return getRuleContext(Yield_argContext.class,0);
 		}
@@ -7056,11 +7260,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_yield_expr; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterYield_expr(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterYield_expr(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitYield_expr(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitYield_expr(this);
 		}
 	}
 
@@ -7097,6 +7301,7 @@ public class Python3Parser extends Parser {
 	}
 
 	public static class Yield_argContext extends ParserRuleContext {
+		public TerminalNode FROM() { return getToken(YaParser.FROM, 0); }
 		public TestContext test() {
 			return getRuleContext(TestContext.class,0);
 		}
@@ -7109,11 +7314,11 @@ public class Python3Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_yield_arg; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).enterYield_arg(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).enterYield_arg(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Python3Listener ) ((Python3Listener)listener).exitYield_arg(this);
+			if ( listener instanceof YaListener ) ((YaListener)listener).exitYield_arg(this);
 		}
 	}
 

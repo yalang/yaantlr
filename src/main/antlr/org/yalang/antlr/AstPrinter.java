@@ -21,7 +21,7 @@ public class AstPrinter {
                 && ctx.getChildCount() == 1
                 && ctx.getChild(0) instanceof ParserRuleContext;
         if (!toBeIgnored) {
-            String ruleName = Python3Parser.ruleNames[ctx.getRuleIndex()];
+            String ruleName = YaParser.ruleNames[ctx.getRuleIndex()];
             for (int i = 0; i < indentation; i++) {
                 System.out.print("  ");
             }

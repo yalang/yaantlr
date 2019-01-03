@@ -9,6 +9,6 @@ public class Main {
 
         ParserFacade parserFacade = new ParserFacade();
         AstPrinter astPrinter = new AstPrinter();
-        astPrinter.print(parserFacade.parse(new File("examples/render.py")));
+        astPrinter.print(parserFacade.parse(new File("examples/اولي.ي")));
     }
 }

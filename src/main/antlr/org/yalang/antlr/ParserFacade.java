@@ -15,13 +15,13 @@ public class ParserFacade {
         return new String(encoded, encoding);
     }
 
-    public Python3Parser.File_inputContext parse(File file) throws IOException {
+    public YaParser.File_inputContext parse(File file) throws IOException {
         String code = readFile(file, Charset.forName("UTF-8"));
-        Python3Lexer lexer = new Python3Lexer(CharStreams.fromString(code));
+        YaLexer lexer = new YaLexer(CharStreams.fromString(code));
 
         CommonTokenStream tokens = new CommonTokenStream(lexer);
 
-        Python3Parser parser = new Python3Parser(tokens);
+        YaParser parser = new YaParser(tokens);
 
         return parser.file_input();
     }
