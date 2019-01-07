@@ -100,7 +100,9 @@ public class YaBaseListener implements YaListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFuncdef(YaParser.FuncdefContext ctx) { }
+	@Override public void enterFuncdef(YaParser.FuncdefContext ctx) {
+		System.out.println("Entered func defination");
+	}
 	/**
 	 * {@inheritDoc}
 	 *
@@ -532,7 +534,9 @@ public class YaBaseListener implements YaListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFor_stmt(YaParser.For_stmtContext ctx) { }
+	@Override public void enterFor_stmt(YaParser.For_stmtContext ctx) {
+		System.out.println("Entered for loop");
+	}
 	/**
 	 * {@inheritDoc}
 	 *

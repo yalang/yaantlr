@@ -2,6 +2,7 @@ package org.yalang.antlr;
 
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
+import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,6 +23,10 @@ public class ParserFacade {
         CommonTokenStream tokens = new CommonTokenStream(lexer);
 
         YaParser parser = new YaParser(tokens);
+
+
+        YaBaseListener extractor = new YaBaseListener();
+        ParseTreeWalker.DEFAULT.walk(extractor, parser.file_input());
 
         return parser.file_input();
     }
