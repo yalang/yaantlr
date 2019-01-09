@@ -24,9 +24,8 @@ public class ParserFacade {
 
         YaParser parser = new YaParser(tokens);
 
-
-        YaBaseListener extractor = new YaBaseListener();
-        ParseTreeWalker.DEFAULT.walk(extractor, parser.file_input());
+//        YaExtractor extractor = new YaExtractor();
+//        ParseTreeWalker.DEFAULT.walk(extractor, parser.file_input());
 
         return parser.file_input();
     }
