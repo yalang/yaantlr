@@ -13,7 +13,17 @@ public class AstPrinter {
     }
 
     public void print(RuleContext ctx) {
-        explore(ctx, 0);
+        exploreAll(ctx);
+    }
+
+    private void exploreAll(RuleContext ctx) {
+        for (int i=0;i<ctx.getChildCount();i++) {
+            ParseTree element = ctx.getChild(i);
+            System.out.print(ctx.getText());
+//            if (element instanceof RuleContext) {
+                exploreAll((RuleContext) element);
+//            }
+        }
     }
 
     private void explore(RuleContext ctx, int indentation) {
