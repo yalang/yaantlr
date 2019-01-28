@@ -3,6 +3,7 @@ package org.yalang.antlr;
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.RuleContext;
 import org.antlr.v4.runtime.tree.ParseTree;
+import org.antlr.v4.runtime.tree.TerminalNode;
 
 public class AstPrinter {
 
@@ -18,11 +19,15 @@ public class AstPrinter {
 
     private void exploreAll(RuleContext ctx) {
         for (int i=0;i<ctx.getChildCount();i++) {
+            String text = ctx.getText();
+            System.out.println(text);
             ParseTree element = ctx.getChild(i);
-            System.out.print(ctx.getText());
-//            if (element instanceof RuleContext) {
+            if (element instanceof TerminalNode) {
+                System.out.println("...");
+            }
+            if (element instanceof RuleContext) {
                 exploreAll((RuleContext) element);
-//            }
+            }
         }
     }
 
